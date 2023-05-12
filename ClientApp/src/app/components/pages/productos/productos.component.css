@@ -1,0 +1,32 @@
+
+table {
+  width: 100%;
+}
+
+.mat-form-field {
+  font-size: 14px;
+  width: 100%;
+}
+
+/*Color de iconos texto*/
+.cit {
+  color: azure;
+}
+
+
+/*Titulo Personalizado de productos*/
+@font-face {
+  font-family: 'miFuente';
+  src: url('../../../Fuentes/Rust.ttf');
+}
+
+#fuente-producto {
+  color: azure;
+  font-family: 'miFuente';
+  font-size: 33px;
+}
+/*Color de boton de Nuevo Producto */
+.colorb {
+  background-color: #808c0f;
+  color:aliceblue;
+}

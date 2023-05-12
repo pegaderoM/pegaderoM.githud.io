@@ -1,0 +1,69 @@
+<head>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<h1 class="animate__animated animate__fadeIn" id="fuente-DashBoard" style="margin:20px 0px 0px 40px">Estadistica</h1>
+<mat-card style="margin: 20px 40px 40px 40px">
+
+
+  <mat-card-content class="dashboard-card-content">
+    <mat-grid-list cols="3" rowHeight="100px">
+
+      <mat-grid-tile>
+
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar>
+              <mat-icon color="accent">trending_up</mat-icon>
+            </div>
+            <mat-card-title>Total Ingresos</mat-card-title>
+            <mat-card-subtitle>S/. {{totalIngresos}}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+
+      </mat-grid-tile>
+
+      <mat-grid-tile>
+
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar>
+              <mat-icon color="warn">attach_money</mat-icon>
+            </div>
+            <mat-card-title>Total Ventas</mat-card-title>
+            <mat-card-subtitle>{{totalVentas}}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+
+      </mat-grid-tile>
+
+
+      <mat-grid-tile>
+        <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar>
+              <mat-icon color="error">spa</mat-icon>
+            </div>
+            <mat-card-title>Total Productos</mat-card-title>
+            <mat-card-subtitle>{{totalProductos}}</mat-card-subtitle>
+          </mat-card-header>
+        </mat-card>
+      </mat-grid-tile>
+
+
+    </mat-grid-list>
+
+    <mat-card style="margin-top:15px">
+      <mat-card-content>
+        <div style="width: 100%;height:400px">
+          <canvas id="myChart"></canvas>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    
+
+  </mat-card-content>
+
+</mat-card>

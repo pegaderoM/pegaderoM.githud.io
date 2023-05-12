@@ -1,0 +1,92 @@
+.sidenav-container {
+  background-image: url("../../../imagenes/p6.jpg");
+  height: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.example-spacer {
+  flex: 1 1 auto;
+}
+
+/*Fuente*/
+@font-face {
+  font-family: 'miFuentet';
+  src: url('../../../Fuentes/Timeless-Bold.ttf');
+}
+
+.fuente-personalizadat {
+  color: azure;
+  font-family: 'miFuentet';
+  font-size: 33px;
+}
+
+/*Texto del Card Izquierdo*/
+@font-face {
+  font-family: 'miFuentecz';
+  src: url('../../../Fuentes/The Goldsmith_Vintage.ttf');
+}
+.fuente-personalizadancz {
+  color: azure;
+  font-family: 'miFuentecz';
+  font-size: 33px;
+}
+
+
+/*ToolBar color*/
+.tc {
+  background-image: radial-gradient(circle at -14.09% 20.12%, #b7bd00 0, #99b400 16.67%, #7ba900 33.33%, #5b9a00 50%, #3b8b10 66.67%, #137e19 83.33%, #007220 100%);
+}
+
+/*Color de iconos texto*/
+.cit {
+  color: azure;
+}
+/*Color de Container de Opciones */
+.colorc {
+  background-image: radial-gradient(circle at 50% 6.67%, #bfbf00 0, #a7b900 12.5%, #8eb000 25%, #75a600 37.5%, #5b9a00 50%, #418e0d 62.5%, #248216 75%, #00781c 87.5%, #006f22 100%);
+}
+
+/*Boton efecto Hover del tool Izquierdo*/
+.efecto {
+  color: #fff !important;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0.5em 1.2em;
+  position: relative;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+ .efecto:hover {
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5);
+  outline-color: rgba(49, 138, 172, 45);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px;
+}
+
+/*Efecto de icono salir*/
+.efectoi {
+  color: #fff !important;
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+  .efectoi:hover {
+    box-shadow: inset 0 0 20px #808c0f;
+    outline-color: rgba(49, 138, 172, 45);
+    outline-offset: 80px;
+    text-shadow: 1px 1px 6px;
+  }

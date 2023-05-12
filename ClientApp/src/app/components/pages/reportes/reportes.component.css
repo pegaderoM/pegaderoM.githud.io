@@ -1,0 +1,21 @@
+
+table {
+  width: 100%;
+}
+
+/*Titulo Personalizado de Reporte*/
+@font-face {
+  font-family: 'miFuente';
+  src: url('../../../Fuentes/Rust.ttf');
+}
+
+#fuente-Reporte {
+  color: azure;
+  font-family: 'miFuente';
+  font-size: 33px;
+}
+/*Color de boton de Reporte */
+.colorbr {
+  background-color: #808c0f;
+  color: aliceblue;
+}

@@ -1,0 +1,25 @@
+
+table {
+  width: 100%;
+}
+
+.input-filter {
+  font-size: 14px;
+  width: 100%;
+}
+/*Titulo Personalizado de Historial de Venta*/
+@font-face {
+  font-family: 'miFuente';
+  src: url('../../../Fuentes/Rust.ttf');
+}
+
+#fuente-HVenta {
+  color: azure;
+  font-family: 'miFuente';
+  font-size: 33px;
+}
+/*Color de boton de Historial Venta */
+.colorbh {
+  background-color: #808c0f;
+  color: aliceblue;
+}

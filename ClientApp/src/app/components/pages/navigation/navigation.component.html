@@ -1,0 +1,68 @@
+<head>
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+
+    <mat-sidenav-container class="sidenav-container">
+      <mat-sidenav #drawer class="sidenav colorc" fixedInViewport
+                   [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+                   [mode]="(isHandset$ | async) ? 'over' : 'side'"
+                   [opened]="(isHandset$ | async) === false">
+
+        <mat-toolbar>
+          <h1 class="animate__animated animate__bounce animate__slow 1s fuente-personalizadancz">  S I P M </h1>
+        </mat-toolbar>
+ 
+        <mat-nav-list>
+
+          <mat-list-item routerLink="/pages/dashboard">
+            <mat-icon mat-list-icon>assessment</mat-icon>
+            <div class="cit efecto fuente-personalizadat" mat-line>Estadistica</div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="/pages/productos">
+            <mat-icon mat-list-icon>local_cafe</mat-icon>
+            <div class="cit efecto fuente-personalizadat" mat-line>Productos</div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="/pages/vender">
+            <mat-icon mat-list-icon>monetization_onx</mat-icon>
+            <div class="cit efecto fuente-personalizadat" mat-line>Vender</div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="/pages/historialventas">
+            <mat-icon mat-list-icon>today</mat-icon>
+            <div class="cit efecto fuente-personalizadat" mat-line>H.Ventas</div>
+          </mat-list-item>
+
+          <mat-list-item routerLink="/pages/reportes">
+            <mat-icon mat-list-icon>folder_special</mat-icon>
+            <div class="cit efecto fuente-personalizadat" mat-line>Reportes</div>
+          </mat-list-item>
+
+        </mat-nav-list>
+
+
+
+      </mat-sidenav>
+      <mat-sidenav-content>
+        <mat-toolbar class="tc">
+          <button type="button"
+                  aria-label="Toggle sidenav"
+                  mat-icon-button
+                  (click)="drawer.toggle()"
+                  *ngIf="isHandset$ | async">
+            <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+          </button>
+          <span class="example-spacer"></span>
+          <button mat-icon-button class="example-icon favorite-icon cit" aria-label="Example icon-button with heart icon"
+                  routerLink="/home">
+            <mat-icon class="efectoi">logout</mat-icon>
+          </button>
+        </mat-toolbar>
+        <!-- Add Content Here -->
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+    </mat-sidenav-container>
+

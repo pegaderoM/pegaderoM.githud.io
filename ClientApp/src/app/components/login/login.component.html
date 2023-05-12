@@ -1,0 +1,41 @@
+<div class="body">
+  <mat-card class="loginCard">
+
+    <div class="header">
+      <img src="https://docplayer.es/docs-images/117/222784965/images/21-0.jpg" alt="" class="avatar">
+      <h1 id="fuente-personalizadal">Iniciar Sesión</h1>
+    </div>
+    <mat-card-content style="padding-bottom: 15px;">
+      <form (ngSubmit)="onLogin()" name="loginForm" [formGroup]="formLogin">
+        <div>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="ct">Email</mat-label>
+            <input formControlName="email" matInput autocomplete="off" />
+            <mat-icon matSuffix class="ci ct">mail</mat-icon>
+          </mat-form-field>
+          <mat-form-field class="full-width" appearance="outline">
+            <mat-label class="ct">Contraseña</mat-label>
+            <input matInput [type]="hidePassword ? 'password' : 'text'" formControlName="password" autocomplete="off">
+            <button class="ci" mat-icon-button matSuffix (click)="hidePassword = !hidePassword" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword" type="button">
+              <mat-icon>{{hidePassword ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+          <button class="full-width color ct fuente-personalizadabr" mat-raised-button type="submit" [disabled]="formLogin.invalid">
+            Ingresar
+            <mat-icon class="ct"matSuffix>login</mat-icon>
+          </button>
+        </div>
+        <br />
+        <br />
+
+        <mat-icon class="ct efecto" matSuffix routerLink="/home">reply</mat-icon>
+      </form>
+
+    </mat-card-content>
+    <mat-card-footer>
+      <mat-progress-bar mode="indeterminate" *ngIf="loading"></mat-progress-bar>
+    </mat-card-footer>
+  </mat-card>
+</div>
+
+

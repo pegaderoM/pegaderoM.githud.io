@@ -1,0 +1,356 @@
+body {
+  background-image: url("../../imagenes/p2.jpg"); /* Reemplaza 'ruta-de-la-imagen.jpg' con la ruta de la imagen que deseas utilizar como fondo */
+  background-size: cover; /* Ajusta el tamaño de la imagen para que cubra todo el fondo */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  max-width: 100%; /* La imagen ocupará como máximo el ancho de su contenedor */
+  height: auto;
+  font-family: "Oxygen", sans-serif;
+  color: #050505;
+  background-size: cover;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    /* Otros estilos específicos para pantallas móviles */
+  }
+}
+
+.caja {
+  font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif;
+  /*color: #ffffff;*/
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  color: azure;
+  font-family: 'miFuente';
+  font-size: 33px;
+  background-image: radial-gradient(circle at 50% 6.67%, #bfbf00 0, #a7b900 12.5%, #8eb000 25%, #75a600 37.5%, #5b9a00 50%, #418e0d 62.5%, #248216 75%, #00781c 87.5%, #006f22 100%);
+  margin: 0 0 25px;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 35px 0px 35px 0px;
+  -moz-border-radius: 35px 0px 35px 0px;
+  -webkit-border-radius: 35px 0px 35px 0px;
+  border: 2px solid #5878ca;
+}
+@media (max-width: 768px) {
+  .caja {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/*Texto dentro de los Contenedores de Informacion*/
+.textoC {
+  color: aliceblue;
+  text-align: center;
+}
+
+/*Titulo Personalizado de Header*/
+@font-face {
+  font-family: 'miFuenteci';
+  src: url('../../Fuentes/JMH Typewriter-Black.ttf');
+}
+
+.fuente-personalizadaci {
+  color: azure;
+  font-family: 'miFuenteci';
+  font-size: 20px;
+ 
+}
+
+
+.toolC {
+  background-image: radial-gradient(circle at -14.09% 20.12%, #b7bd00 0, #99b400 16.67%, #7ba900 33.33%, #5b9a00 50%, #3b8b10 66.67%, #137e19 83.33%, #007220 100%);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/*Card imagen y contenido*/
+.cards {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 100;
+  padding: 100;
+ 
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+.card_image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+  .card_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  background-color: #c89b3f;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.raise:hover,
+.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  -webkit-transform: translateY(-0.25em);
+  transform: translateY(-0.25em);
+}
+
+.raise {
+  --color: #ffa260;
+  --hover: #6f4f28;
+}
+
+.menuI button {
+  padding: 0 !important;
+  margin: 0 15px;
+}
+
+  .menuI button:hover {
+    color: #fff; /* color de fuente hover */
+  }
+
+/*Titulo Personalizado de Header*/
+@font-face {
+  font-family: 'miFuentep';
+  src: url('../../Fuentes/The Goldsmith_Vintage.ttf');
+}
+
+#fuente-personalizada {
+  color: azure;
+  font-family: 'miFuentep';
+  font-size: 35px;
+}
+/*Titulo Personalizado de Titulo de Info*/
+@font-face {
+  font-family: 'miFuenteti';
+  src: url('../../Fuentes/The Goldsmith_Vintage.ttf');
+}
+
+.fuente-personalizadati {
+  color: azure;
+  font-family: 'miFuenteti';
+  font-size: 40px;
+}
+
+
+/*Cards de informacion*/
+.card {
+  background-color:#7d6853;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  }
+
+.card_content {
+  position: relative;
+  padding: 16px 12px 32px 24px;
+  margin: 0px 9px 9px 0;
+  max-height: 290px;
+  
+}
+
+  .card_content::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .card_content::-webkit-scrollbar-track {
+    box-shadow: 0;
+    border-radius: 0;
+  }
+
+  .card_content::-webkit-scrollbar-thumb {
+    background: #c89b3f;
+    border-radius: 15px;
+  }
+
+.card_title {
+  position: relative;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+  .card_title::after {
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #c89b3f;
+    content: "";
+  }
+
+hr {
+  margin: 24px auto;
+  width: 50px;
+  border-top: 2px solid #c89b3f;
+}
+
+.card_text p {
+  color: aliceblue;
+  margin: 0 0 24px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+  .card_text p:last-child {
+    margin: 0;
+  }
+
+.text {
+  text-align: center;
+  justify-content: center;
+}
+
+.button {
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 3rem;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  background-color: #3b8b10;
+  color: aliceblue;
+  font-weight: bold;
+}
+
+/*imagenes*/
+.contenedor-imagen {
+  text-align: center
+}
+  .contenedor-imagen img {
+    max-width: 40%;
+    margin: 0 auto;
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    border-radius: 10px;
+    height: auto;
+  }
+    
+
+
+
+.imgtex {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+
+
+.contenedorr-imagen {
+  width: 80%; /* ancho del contenedor */
+  text-align: center; /* centrar la imagen horizontalmente */
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10%;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+  .contenedorr-imagen img {
+   
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+
+/*Titulo Personalizado de Titulos de Cards*/
+@font-face {
+  font-family: 'miFuentetc';
+  src: url('../../Fuentes/The Goldsmith_Vintage.ttf');
+}
+
+.fuente-personalizadatc {
+  color: black;
+  font-family: 'miFuentetc';
+  text-align: center;
+  font-size: 40px;
+}
+
+
+/*Titulo Personalizado de informacion de Cards*/
+@font-face {
+  font-family: 'miFuenteIc';
+  src: url('../../Fuentes/Timeless.ttf');
+}
+
+.fuente-personalizadaIc {
+  color: aliceblue;
+  font-family: 'miFuenteIc';
+  text-align: center;
+  font-size: 40px;
+}
+.leer-mas {
+  margin: auto;
+  align-items: center;
+  background-image: radial-gradient(circle at 50% 6.67%, #bfbf00 0, #a7b900 12.5%, #8eb000 25%, #75a600 37.5%, #5b9a00 50%, #418e0d 62.5%, #248216 75%, #00781c 87.5%, #006f22 100%);
+  color: aliceblue; /* Establece el color del texto en el botón */
+  border-radius: 10px; /* Establece la forma del botón */
+  padding: 5px 10px; /* Agrega un poco de espacio entre el texto y los bordes del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+.centrado {
+  display: flex;
+  justify-content: center;
+}

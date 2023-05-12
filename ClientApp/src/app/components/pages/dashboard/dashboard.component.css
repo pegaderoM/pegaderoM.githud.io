@@ -1,0 +1,15 @@
+.example-card {
+    width:80%
+}
+
+/*Titulo Personalizado de Dashboard*/
+@font-face {
+  font-family: 'miFuente';
+  src: url('../../../Fuentes/Rust.ttf');
+}
+
+#fuente-DashBoard {
+  color: azure;
+  font-family: 'miFuente';
+  font-size: 33px;
+}
