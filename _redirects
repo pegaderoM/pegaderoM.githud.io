@@ -1,0 +1,5 @@
+# Redirigir la ruta /old-page a /new-page
+/old-page   /new-page
+
+# Redirigir todas las rutas que no existen a la página de inicio
+/ClientApp/src/index.html   200
